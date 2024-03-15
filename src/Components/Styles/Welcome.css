@@ -1,0 +1,25 @@
+.well {
+    /* background-color: aqua; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 'gr ig';
+    justify-content: center;
+    align-items: center;
+}
+
+.greet {
+    grid-area: gr;
+    
+}
+
+.front-img {
+    grid-area: ig;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-image: url('./dialog-axiata.png');
+    background-size: 320px;
+    background-repeat: no-repeat;
+    opacity: 70%;
+}

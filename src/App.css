@@ -1,0 +1,46 @@
+#root {
+  width: 100%;
+} 
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  transition: all 500ms ease-in;
+  scroll-behavior: smooth;
+  
+}
+.pag {
+  color: #bdbdbd;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rem;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+span {
+  font-size: 64px;
+}

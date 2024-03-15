@@ -1,0 +1,28 @@
+@import url("https://use.typekit.net/xvs5mnt.css");
+
+body {
+  min-height: 100vh;
+}
+
+
+:root {
+  font-family: museomoderno;
+  font-weight: 600;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  color: #f4f5fa;
+  background-color: #141414;
+  background-image: url('./assets/backg.png');
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #bdbdbd;
+  /* text-decoration: inherit; */
+}
+a:hover {
+  color: #f4f5fa;
+}
+
