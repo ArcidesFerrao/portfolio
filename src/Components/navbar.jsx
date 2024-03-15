@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Styles/navbar.css';
 
@@ -7,7 +6,7 @@ export default function navbar() {
     <div className='nav'>
 
         <NavLink to="/">
-          <span class="material-symbols-outlined nav-i">
+          <span className="material-symbols-outlined nav-i">
             code_off
           </span>
         </NavLink>
@@ -29,7 +28,7 @@ export default function navbar() {
         </div>
 
         <a href="#">
-          <span class="material-symbols-outlined nav-i">
+          <span className="material-symbols-outlined nav-i">
             menu
           </span>
         </a>

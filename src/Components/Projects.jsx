@@ -1,4 +1,3 @@
-import React from 'react';
 import './Styles/Projects.css';
 import scRelogio1 from "../assets/Sc-1.png";
 import scRelogio2 from "../assets/Sc-2.png";
@@ -16,7 +15,7 @@ export default function Projects() {
 
             <div className="pr1 project-box">
               <div className="pr-title">
-                <span class="material-symbols-outlined pr-i">
+                <span className="material-symbols-outlined pr-i">
                   farsight_digital
                 </span>
                 <a href="https://arcidesferrao.github.io/relogio-digital/">
@@ -36,7 +35,7 @@ export default function Projects() {
 
             <div className="pr2 project-box">
               <div className="pr-title">
-                <span class="material-symbols-outlined pr-i">
+                <span className="material-symbols-outlined pr-i">
                   id_card
                 </span>
 
