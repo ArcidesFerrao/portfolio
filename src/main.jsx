@@ -7,6 +7,9 @@ import './index.css'
 import App from './App.jsx';
 
 import ErrorPage from './Components/ErrorPage.jsx';
+
+import AboutPage from './Components/AboutPage.jsx';
+import ProjectsPage from './Components/ProjectsPage.jsx';
 import BlogPage from './Components/BlogPage.jsx';
 import Home from './Components/Home.jsx';
 
@@ -23,11 +26,11 @@ const router = createHashRouter([
       },
       {
         path: '/about',
-        // element: <About />
+        element: <AboutPage />
       },
       {
         path: '/projects',
-        // element: <Projects />
+        element: <ProjectsPage />
       },
       {
         path: '/blog',

@@ -1,0 +1,12 @@
+.project-page {
+    color: #bdbdbd;
+    min-height: 100vh;
+    padding: 5rem 12rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    align-items: center;
+    justify-content: center;
+}
