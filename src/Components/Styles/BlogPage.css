@@ -6,9 +6,12 @@ img {
 h2 {
     font-weight: 300;
 }
-p {
-    text-wrap: wrap;
-    overflow-wrap: break-word;
+.post-preview-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-justify: newspaper;
 }
 
 .blog-page {

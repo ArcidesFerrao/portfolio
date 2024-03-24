@@ -8,11 +8,15 @@ import App from './App.jsx';
 
 import ErrorPage from './Components/ErrorPage.jsx';
 
-import AboutPage from './Components/AboutPage.jsx';
-import ProjectsPage from './Components/ProjectsPage.jsx';
-import BlogPage from './Components/BlogPage.jsx';
 import Home from './Components/Home.jsx';
 
+import AboutPage from './Components/AboutPage.jsx';
+import ProjectsPage from './Components/ProjectsPage.jsx';
+import Posts from './Components/Posts.jsx';
+
+import BlogPage from './Components/BlogPage.jsx';
+import AllPosts from './Components/BlogComp/AllPosts.jsx';
+import BlogPost from './Components/BlogComp/BlogPost.jsx';
 
 const router = createHashRouter([
   {
@@ -34,7 +38,21 @@ const router = createHashRouter([
       },
       {
         path: '/blog',
-        element: <BlogPage />
+        element: <BlogPage />,
+        children: [
+          {
+            path: '/blog/',
+            element: <AllPosts />,
+          },
+          {
+            path: '/blog/:slug',
+            element: <BlogPost />,
+          },
+        ]
+      },
+      {
+        path: '/post',
+        element: <Posts />,
       },
     ]
   },
