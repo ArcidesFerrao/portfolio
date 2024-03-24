@@ -21,7 +21,10 @@ export default function AllPosts() {
             }
         }`
       )
-      .then((data) => setAllPosts(data))
+      .then((data) => { 
+        setAllPosts(data)
+        console.log(data)
+        })
       .catch(console.error);
       
     }, [])
@@ -30,7 +33,7 @@ export default function AllPosts() {
   return (
     <section className="all-posts blog-posts">
         {allPostsData && allPostsData.map((post, index) => (
-            <Link to={"/" + post.slug.current} key={post.slug.current} >
+            <Link to={"/blog/" + post.slug.current} key={post.slug.current} >
                 <span key={index}>
                     <img src={post.mainImage.asset.url} alt="" />
                     <span>
