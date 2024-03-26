@@ -1,84 +1,48 @@
-img {
-    display: block;
-    object-fit: contain;
-
-}
-h2 {
-    font-weight: 300;
-}
-.post-preview-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-justify: newspaper;
-}
-
-.blog-page {
-    color: #bdbdbd;
-    min-height: 100vh;
-    padding: 5rem 12rem;
+.posts {
+    grid-area: ps;
     display: grid;
-    grid-auto-rows: max-content;
-    column-gap: 5px;
-    grid-template-areas: 'cat'
-        'po';
-    align-items: center;
-    /* justify-content: center; */
-}
-
-.categories {
-    grid-area: cat;
-    padding: 2rem 0;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-
-
-.blog-posts {
-    grid-area: po;
-    min-height: 80vh;
-
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: max-content;
-
+    grid-template-rows: max-content;
 }
 
 .post {
-    border: solid 1px #3d3c4b;
+    border: solid .8px #3d3c4b;
     border-radius: .4rem;
+    padding: 2rem;
+    gap: 2rem;
     overflow: hidden;
-
-    height: 75vh;
-
     display: grid;
-    grid-template-rows: 50% 50%;
-    grid-auto-columns: auto;
-    grid-template-areas: 'ig'
-        'det';
+    grid-template-columns: 40% 55%;
+    grid-template-areas: 'ig det';
 }
+
 .post:hover {
     box-shadow: rgba(0, 0, 0, .9) 0px 8px 18px 3px;
     background-color: rgb(61, 60, 75, 0.1);
 }
-.post-image {
-    grid-area: ig;
 
-    max-width: 100%;
+.post-img {
+    grid-area: ig;
+    display: inline-block;
+    overflow: hidden;
 }
+.post-image {
+    border-radius: .4rem;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.post-image:hover {
+    transform: scale(1.2);
+}
+
 
 .post-detail {
     grid-area: det;
 
-    padding: 1rem;
-
     display: flex;
     flex-direction: column;
+    
     justify-content: space-around;
-
 }
 
 .post-date {
@@ -88,6 +52,13 @@ h2 {
     align-items: center;
 }
 
+.post-preview-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-justify: newspaper;
+}
 
 
 .list {
@@ -110,4 +81,5 @@ h2 {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-  }
+}
+

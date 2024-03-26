@@ -12,9 +12,8 @@ import Home from './Components/Home.jsx';
 
 import AboutPage from './Components/AboutPage.jsx';
 import ProjectsPage from './Components/ProjectsPage.jsx';
-import Posts from './Components/Posts.jsx';
 
-import BlogPage from './Components/BlogPage.jsx';
+import BlogPage from './Components/BlogComp/BlogPage.jsx';
 import AllPosts from './Components/BlogComp/AllPosts.jsx';
 import BlogPost from './Components/BlogComp/BlogPost.jsx';
 
@@ -49,10 +48,6 @@ const router = createHashRouter([
             element: <BlogPost />,
           },
         ]
-      },
-      {
-        path: '/post',
-        element: <Posts />,
       },
     ]
   },

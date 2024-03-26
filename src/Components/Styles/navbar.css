@@ -1,5 +1,5 @@
 .nav {
-    padding: 1rem 10rem;
+    padding: 1rem 8rem;
     /* width: 1000px; */
     width: 100%;
     height: max-content;
@@ -24,3 +24,23 @@
 .active {
     color: #f4f5fa;
 }
+.nav-darkmode {
+    display: flex;
+    align-items: center    ;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.gg--dark-mode {
+    display: inline-block;
+    width: 0.5em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23000'%3E%3Cpath d='M12 16a4 4 0 0 0 0-8z'/%3E%3Cpath fill-rule='evenodd' d='M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 2v4a4 4 0 1 0 0 8v4a8 8 0 1 0 0-16' clip-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }

@@ -1,6 +1,7 @@
 import './App.css';
 import { Outlet } from 'react-router-dom';
 import Navbar from './Components/navbar';
+import Footer from './Components/Footer';
 
 
 
@@ -15,6 +16,9 @@ function App() {
 
       <Outlet />
 
+      <section className='footer-container'>
+        <Footer />
+      </section>
     </>
   )
 }

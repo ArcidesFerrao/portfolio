@@ -8,10 +8,9 @@ export default function ErrorPage() {
         <Navbar />
 
         <div className="msg">
-            <h2>
-
-                404 Page not Found!!
-            </h2>
+            <h3>
+              404 Page not Found!!
+            </h3>
 
         </div>
     </div>

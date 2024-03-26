@@ -1,0 +1,24 @@
+
+
+.blog-head {
+    grid-area: hd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.blog-posts {
+    margin: 4rem 0;
+    grid-area: po;
+    min-height: 80vh;
+
+    display: grid;
+    gap: 2rem;
+
+    grid-template-columns: 20% 35% 20% 25%;
+    grid-auto-rows: max-content;
+    grid-template-areas: 'hd hd . .'
+        'ps ps ps .';
+}
+

@@ -27,11 +27,14 @@ export default function navbar() {
 
         </div>
 
-        <a href="#">
+        <div className='nav-darkmode'>
+          <span className="gg--dark-mode">
+
+          </span>
           <span className="material-symbols-outlined nav-i">
             menu
           </span>
-        </a>
+        </div>
         
     </div>
   )

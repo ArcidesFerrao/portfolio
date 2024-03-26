@@ -2,12 +2,12 @@
     width: 100%;
     height: 80vh;
     display: grid;
-    /* gap: 10px; */
-    grid-template-rows: 12% 15% 55%;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-areas: 'tl . . '
-        'pg pg .'
-        'bl bl bl';
+    row-gap: 8px;
+    grid-template-rows: 15% 15% 70%;
+    grid-template-columns: 40% 30% 10% 20% ;
+    grid-template-areas: 'tl . . . '
+        'pg pg . .'
+        'ps ps ps .';
 }
 
 .blog-detail {
