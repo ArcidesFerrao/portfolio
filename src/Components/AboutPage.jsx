@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import './Styles/AboutPage.css';
 
 export default function AboutPage() {
@@ -25,7 +26,9 @@ export default function AboutPage() {
               View Résumé
             </button>
             <div className="download-res">
-              <button className='dowload btn'>download</button>
+              <button className='dowload btn'>
+                <span className="oui--download"></span>
+              </button>
             </div>
           </div>
           <div className="personal-email">

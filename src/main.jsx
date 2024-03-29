@@ -43,7 +43,7 @@ const router = createHashRouter([
             element: <AllProjects />,
           },
           {
-            path: '/projects/:id',
+            path: '/projects/:slug',
             element: <ProjectPage />
           }
         ]

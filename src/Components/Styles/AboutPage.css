@@ -1,3 +1,16 @@
+.oui--download {
+    display: inline-block;
+    width: .3em;
+    height: .3em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' d='m9 9.114l1.85-1.943a.52.52 0 0 1 .77 0c.214.228.214.6 0 .829l-1.95 2.05a1.552 1.552 0 0 1-2.31 0L5.41 8a.617.617 0 0 1 0-.829a.52.52 0 0 1 .77 0L8 9.082V.556C8 .249 8.224 0 8.5 0s.5.249.5.556z'/%3E%3Cpath fill='%23000' d='M16 13.006V10h-1v3.006a.995.995 0 0 1-.994.994H3.01a.995.995 0 0 1-.994-.994V10h-1v3.006c0 1.1.892 1.994 1.994 1.994h10.996c1.1 0 1.994-.893 1.994-1.994'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
 .fluent--mail-16-regular {
     display: inline-block;
     width: 0.4em;
@@ -17,6 +30,7 @@
     min-height: 100vh;
     padding: 8rem 8rem;
     
+
     row-gap: 2rem;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -68,19 +82,25 @@
 .btn {
     background: none;
     color: #bdbdbd;
-    background-color: rgb(61, 60, 75, 0.2);
+    background-color: rgb(64, 60, 80, 0.32);
 
     padding: 0.8rem 0.8rem;
     border-radius: 0.2rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: medium;
+}
+
+.res-button:hover,
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, .5) 0px 8px 20px 4px;
+    border: solid .8px #3d3c4b;
+
 }
 
 .personal-resume {
     display: grid;
-    grid-template-columns: 75% 15%;
+    grid-template-columns: 70% 25%;
     gap: 0.4rem;
-
 }
 
 .personal-email {
