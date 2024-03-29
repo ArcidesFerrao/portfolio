@@ -3,15 +3,11 @@ img {
     object-fit: cover;
 }
 
-
-
 .blog-page {
     color: #bdbdbd;
     min-height: 100vh;
     padding: 6rem 8rem;
-       
 }
-
 
 li {
     cursor: pointer;

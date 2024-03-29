@@ -53,7 +53,6 @@ export default function BlogPost() {
     //   console.log(postedDate);
     }, [publishDate, postedDate]);
 
-    // setPublishDate(format(new Date(postData.publishedAt)));
     if (!postData) return <Loading />;
     
 

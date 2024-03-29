@@ -53,10 +53,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-{/* 
             <div className="pr3 project-box">
               <div className="pr-title">
-                <span class="material-symbols-outlined pr-i">
+                <span className="material-symbols-outlined pr-i">
                   assignment
                 </span>
 
@@ -75,7 +74,7 @@ export default function Projects() {
             </div>
             <div className="pr4 project-box">
               <div className="pr-title">
-                <span class="material-symbols-outlined pr-i">
+                <span className="material-symbols-outlined pr-i">
                   assignment
                 </span>
 
@@ -92,7 +91,6 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-             */}
         </div>
     </div>
   )

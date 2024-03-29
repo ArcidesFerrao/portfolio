@@ -78,8 +78,6 @@
 }
 .categories {
     grid-area: navi;
-    /* margin-top: 1rem; */
-    /* padding: 1rem 0;  */
     font-weight: 400;
     cursor: pointer; 
 }
