@@ -26,3 +26,18 @@ a:hover {
   color: #f4f5fa;
 }
 
+button {
+  font-family: museomoderno;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: none;
+}
+
+button:hover {
+  border: solid .8px #3d3c4b;
+}
+
+img {
+  opacity: .7;
+}

@@ -5,7 +5,8 @@
 }
 
 .post {
-    border: solid .8px #3d3c4b;
+    background-color: rgb(61, 60, 75, 0.2);
+
     border-radius: .4rem;
     padding: 2rem;
     gap: 2rem;
@@ -17,7 +18,8 @@
 
 .post:hover {
     box-shadow: rgba(0, 0, 0, .9) 0px 8px 18px 3px;
-    background-color: rgb(61, 60, 75, 0.1);
+    border: solid .8px #3d3c4b;
+
 }
 
 .post-img {
