@@ -1,0 +1,59 @@
+.page-container {
+    padding: 2rem 8rem;
+    display: grid;
+    row-gap: 2rem;
+    grid-template-rows: max-content;
+    grid-template-areas: 'hdPr'
+        'picPr'
+        'vwPr'
+        'tcPr';
+}
+
+.head-project {
+    grid-area: hdPr;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-project {
+    grid-area: picPr;
+}
+
+.image-project img {
+    border-radius: 0.4rem;
+
+}
+
+.overview-project {
+    grid-area: vwPr;
+}
+
+.tec-project {
+    grid-area: tcPr;
+}
+
+.url-container {
+    border-radius: 0.2rem;
+    border: solid .8px #3d3c4b;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.url-container:hover {
+    box-shadow: rgba(0, 0, 0, .9) 0px 8px 18px 3px;
+    background-color: rgb(61, 60, 75, 0.1);
+}
+
+.pr-page-title {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.project-url {
+    font-size: large;
+    margin: 0.2rem 0.4rem;
+}

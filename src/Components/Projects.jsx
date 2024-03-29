@@ -36,7 +36,7 @@ export default function Projects() {
             <div className="pr2 project-box">
               <div className="pr-title">
                 <span className="material-symbols-outlined pr-i">
-                  id_card
+                id_card
                 </span>
 
                 <a href="https://arcidesferrao.github.io/business-card/">

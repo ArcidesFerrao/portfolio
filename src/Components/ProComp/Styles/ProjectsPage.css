@@ -1,0 +1,32 @@
+.projects-page {
+    color: #bdbdbd;
+    min-height: 100vh;
+    padding: 6rem 8rem;
+    margin: 4rem 0;
+    
+    display: grid;
+    gap: 2rem;
+    
+    /* grid-template-columns: 32% 32% 32%; */
+    grid-auto-rows: max-content;
+    grid-template-areas: 'hd'
+        'pr';
+}
+
+.projects-head {
+    grid-area: hd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.projects {
+    grid-area: pr;
+
+    gap: 0.4rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: auto;
+    
+}

@@ -1,0 +1,45 @@
+.project-container{
+    border-radius: 0.4rem;
+    border: solid .8px #3d3c4b;
+    padding: 0.8rem;
+    column-gap: 0.8rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 40% 60%;
+
+    grid-template-areas: "imag nPr"
+        "imag descPr";
+
+}
+
+.project-container:hover {
+    box-shadow: rgba(0, 0, 0, .9) 0px 8px 18px 3px;
+    background-color: rgb(61, 60, 75, 0.1);
+}
+
+.project-image {
+    grid-area: imag;
+    display: block;
+
+}
+
+.project-name {
+    grid-area: nPr;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0.4rem;
+}
+
+.pr-i {
+    font-size: 24px;
+}
+
+.project-description {
+    grid-area: descPr;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 0.2rem;
+}

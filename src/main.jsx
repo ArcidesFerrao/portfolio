@@ -11,7 +11,10 @@ import ErrorPage from './Components/ErrorPage.jsx';
 import Home from './Components/Home.jsx';
 
 import AboutPage from './Components/AboutPage.jsx';
-import ProjectsPage from './Components/ProjectsPage.jsx';
+
+import ProjectsPage from './Components/ProComp/ProjectsPage.jsx';
+import ProjectPage from './Components/ProComp/ProjectPage.jsx';
+import AllProjects from './Components/ProComp/Projects.jsx';
 
 import BlogPage from './Components/BlogComp/BlogPage.jsx';
 import AllPosts from './Components/BlogComp/AllPosts.jsx';
@@ -33,7 +36,18 @@ const router = createHashRouter([
       },
       {
         path: '/projects',
-        element: <ProjectsPage />
+        element: <ProjectsPage />,
+        children: [
+          {
+            path: '/projects/',
+            element: <AllProjects />,
+          },
+          {
+            path: '/projects/:id',
+            element: <ProjectPage />
+          }
+        ]
+
       },
       {
         path: '/blog',
