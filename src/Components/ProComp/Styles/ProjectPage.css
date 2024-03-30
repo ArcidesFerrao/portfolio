@@ -91,7 +91,10 @@
 }
 
 .each-tech {
-    background-color: rgb(61, 60, 75, 0.3);
+    /* background-color: rgb(61, 60, 75, 0.3); */
+    background-color: rgba(0, 0, 0, 0.4);
+    border: solid 0.01rem hsla(244, 11%, 26%, 0.4);
+
     padding: 0.4rem 0.8rem;
     border-radius: 0.4rem;
 

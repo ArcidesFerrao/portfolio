@@ -10,9 +10,9 @@ function App() {
   return (
     <>
     
-      <div className="bar">
+      <nav className="bar" >
         <Navbar />
-      </div>
+      </nav>
 
       <Outlet />
 

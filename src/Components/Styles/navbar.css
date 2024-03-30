@@ -24,7 +24,7 @@
 .active {
     color: #f4f5fa;
 }
-.nav-darkmode {
+.nav-menu {
     display: flex;
     align-items: center    ;
     justify-content: space-between;
@@ -43,4 +43,41 @@
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
+  }
+
+  .openNav {
+    background: none;
+    color: #bdbdbd;
+    border-radius: 0.4rem;
+    padding: 0 0.4rem;
+
+  }
+
+  .openNav:hover {
+    /* background-color: #3d3a4b; */
+    background-color: rgba(0, 0, 0, 0.6);
+
+  }
+
+  .navigation {
+    position: absolute;
+    top: 0;
+    right: -20rem;
+    width: 20rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0);
+    padding: 6rem 2rem ;
+    z-index: 1;
+  }
+
+  .navigation-active {
+    right: 0;
+  }
+
+  .navigation ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0.8rem 0.8rem;
+    color: #bdbdbd;
+    border-bottom: #3d3a4b solid 1px;
   }

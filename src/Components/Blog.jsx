@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Posts from './BlogComp/Posts';
 import './Styles/Blog.css';
 

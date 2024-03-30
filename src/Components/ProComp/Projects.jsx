@@ -89,10 +89,6 @@ export default function AllProjects() {
                     <div className="project-detail">
                         <Link to={"/projects/" + project.slug.current} key={project.slug.current}>
                             <div className="project-name">
-                                <span className={project.prIcon} >
-                                    {project.iconName}
-                                </span>
-                                {/* <h3>{project.prName}</h3> */}
                                 <h3>{project.title}</h3>
                             </div>
                         </Link>

@@ -72,20 +72,11 @@
     display: grid;
     row-gap: 4rem;
     grid-template-columns: 70% 30%;
-    grid-template-areas: 'navi navi'
+    grid-template-areas:
         'bloc auth'
         'refe auth';
 }
-.categories {
-    grid-area: navi;
-    font-weight: 400;
-    cursor: pointer; 
-}
 
-.categories li {
-    background-color: rgb(61, 60, 75, 0.1);
-    padding: 0.2rem 0.4rem;
-}
 .blog-block {
     grid-area: bloc;
     border-top: solid 1px #3d3a4b;
@@ -148,7 +139,9 @@
     align-items: center;
     padding: 0.4rem 1rem;
     border-radius: 0.2rem;
-    background-color: hsla(0, 0%, 27%, 0.1);
+    /* background-color: hsla(0, 0%, 27%, 0.1); */
+    background-color: rgba(0, 0, 0, 0.6);
+
 }
 
 .icon-container {
@@ -161,7 +154,9 @@
     padding: 1rem;
 
     border-radius: 0.2rem;
-    background-color: hsla(0, 0%, 27%, 0.1);
+    /* background-color: hsla(0, 0%, 27%, 0.1); */
+    background-color: rgba(0, 0, 0, 0.6);
+
 
 }
 .icon-size {

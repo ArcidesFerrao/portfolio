@@ -4,7 +4,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import { format } from "date-fns";
 import { useEffect, useState } from 'react';
-import { useParams, NavLink } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import Loading from '../Loading';
 
@@ -58,23 +58,7 @@ export default function BlogPost() {
 
   return (
     <section className="blog-post-container">
-
-        <div className="categories">
-            <ul className='list'>
-                <li>
-                  <NavLink to='/blog' >
-                    All...
-                  </NavLink>
-                  
-                </li>
-                <li>Recent</li>
-                <li>Top 4</li>
-                <li>Front-End</li>
-                <li>Music</li>
-                <li>Art + Culture</li>
-            </ul>
-        </div>
-
+        
         <div className='blog-block'>
             <div className="posted-date">
                 <span className="lets-icons--date-today-duotone">

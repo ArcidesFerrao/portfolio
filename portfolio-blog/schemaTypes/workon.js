@@ -49,6 +49,18 @@ export default defineType({
         }
     }),
     defineField({
+        name: 'iconSet',
+        title: 'Icon Set',
+        type: 'array',
+        of: [{type: 'string'}],
+        options: {
+            list: [
+                {value: "material-symbols-outlined pr-i", title: 'b-card'},
+                
+            ]
+        }
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'text',

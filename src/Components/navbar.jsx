@@ -1,9 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import './Styles/navbar.css';
 
+
+
 export default function navbar() {
+  
+
   return (
-    <div className='nav'>
+    <div className='nav' >
 
         <NavLink to="/">
           <span className="material-symbols-outlined nav-i">
@@ -27,15 +31,27 @@ export default function navbar() {
 
         </div>
 
-        <div className='nav-darkmode'>
+        <div className='nav-menu'>
           <span className="gg--dark-mode">
 
           </span>
-          <span className="material-symbols-outlined nav-i">
-            menu
-          </span>
+          <button 
+            className='openNav' 
+            // onClick={} 
+          >
+            <span className="material-symbols-outlined nav-i">
+              menu
+            </span>
+          </button>
         </div>
         
+        <div className="navigation" id='side-menu'>
+          <ul>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Blog</li>
+          </ul>
+        </div>
     </div>
   )
 }

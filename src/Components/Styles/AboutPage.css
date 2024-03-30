@@ -82,7 +82,8 @@
 .btn {
     background: none;
     color: #bdbdbd;
-    background-color: rgb(64, 60, 80, 0.32);
+    /* background-color: rgb(64, 60, 80, 0.32); */
+    background-color: rgba(0, 0, 0, 0.6);
 
     padding: 0.8rem 0.8rem;
     border-radius: 0.2rem;
@@ -94,6 +95,7 @@
 .btn:hover {
     box-shadow: rgba(0, 0, 0, .5) 0px 8px 20px 4px;
     border: solid .8px #3d3c4b;
+    background-color: rgb(61, 60, 75, 0.1);
 
 }
 

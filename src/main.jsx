@@ -19,6 +19,7 @@ import AllProjects from './Components/ProComp/Projects.jsx';
 import BlogPage from './Components/BlogComp/BlogPage.jsx';
 import AllPosts from './Components/BlogComp/AllPosts.jsx';
 import BlogPost from './Components/BlogComp/BlogPost.jsx';
+import SortedPosts from './Components/BlogComp/SortedPosts.jsx';
 
 const router = createHashRouter([
   {
@@ -61,6 +62,10 @@ const router = createHashRouter([
             path: '/blog/:slug',
             element: <BlogPost />,
           },
+          {
+            path: '/blog/recent',
+            element: <SortedPosts />,
+          }
         ]
       },
     ]

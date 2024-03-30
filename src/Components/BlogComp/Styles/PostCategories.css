@@ -1,0 +1,12 @@
+.categories {
+    /* grid-area: navi; */
+    font-weight: 400;
+    cursor: pointer; 
+    margin: 2rem 0;
+}
+
+.categories li {
+    /* background-color: rgb(61, 60, 75, 0.1); */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.2rem 0.4rem;
+}
