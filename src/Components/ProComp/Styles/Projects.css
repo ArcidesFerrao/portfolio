@@ -57,3 +57,13 @@
     font-size: large;
 
 }
+
+@media (max-width: 1000px) {
+    
+    .adjustPadd {
+        display: flex;
+        flex-direction: column;
+        
+        padding: 0;
+    }
+  }

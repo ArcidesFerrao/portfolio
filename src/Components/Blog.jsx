@@ -4,7 +4,7 @@ import './Styles/Blog.css';
 
 export default function Blog() {
   return (
-    <div className='blog-container'>
+    <div className='blog-container flexDisplay'>
         
         <div className="title-blog">
           <h2>Blog</h2>

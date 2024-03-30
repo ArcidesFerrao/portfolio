@@ -99,7 +99,7 @@ export default function BlogPost() {
             <div className="tags down-border">
                 <h3 className='auth-title'>Tags</h3>
                 <div className="tag-container contain">
-                    <div className="tags-post">
+                    <div className="tags-post cont">
                         <p>Sanity</p>
                     </div>
                 </div>
@@ -109,13 +109,13 @@ export default function BlogPost() {
                 <h3 className='auth-title'>Share Post</h3>
 
                 <div className="icon-share contain">
-                    <div className="icon-container">
+                    <div className="icon-container cont">
                         <span className="bi--github icon-size"></span>
                     </div>
-                    <div className="icon-container">
+                    <div className="icon-container cont">
                         <span className="pajamas--twitter icon-size"></span>
                     </div>
-                    <div className="icon-container">
+                    <div className="icon-container cont">
                         <span className="bi--linkedin icon-size"></span>
                     </div>
 

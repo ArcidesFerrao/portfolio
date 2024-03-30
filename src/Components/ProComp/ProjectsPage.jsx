@@ -3,7 +3,7 @@ import './Styles/ProjectsPage.css';
 
 export default function ProjectsPage() {
   return (
-    <section className="projects-page">
+    <section className="projects-page flexDisplay">
 
       <Outlet />
             

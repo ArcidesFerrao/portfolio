@@ -11,7 +11,7 @@ export default function Projects() {
         <div className="title-projects">
             <h2>Projects</h2>
         </div>
-        <div className="project">
+        <div className="project flexDisplay">
 
             <div className="pr1 project-box">
               <div className="pr-title">

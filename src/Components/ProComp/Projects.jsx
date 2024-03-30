@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import './Styles/Projects.css';
 // import scRelogio1 from "../../assets/Sc-1.png";
 // import scCard from "../../assets/Sc-card.png";
@@ -74,14 +75,14 @@ export default function AllProjects() {
     <>
         <div className="projects-head">
           <h2>Projects</h2>
-          <h4>Ive worked on tons of little projects over the years but these are the ones that Im most proud of.</h4>
+          <h4>I've worked on tons of little projects over the years but these are the ones that I'm most proud of.</h4>
         </div>
         
-        <div className="projects">
+        <div className="projects adjustPadd">
             
     
             {projectsData && projectsData.map((project, index) => (
-                <div className="project-container" key={index}>
+                <div className="project-container cont" key={index}>
                     <div className="project-image">
                         <img src={project.mainImage.asset.url} alt="" />
                     </div>

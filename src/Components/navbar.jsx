@@ -1,13 +1,18 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { NavLink } from 'react-router-dom';
 import './Styles/navbar.css';
+import { useState } from 'react';
 
 
 
 export default function navbar() {
-  
+  const [showNav, setShowNav] = useState(false)
+  const handleShowMenu = () => {
+    setShowNav(!showNav);
+  }
 
   return (
-    <div className='nav' >
+    <div className='nav smallPadding' >
 
         <NavLink to="/">
           <span className="material-symbols-outlined nav-i">
@@ -15,7 +20,7 @@ export default function navbar() {
           </span>
         </NavLink>
 
-        <div className="navigate">
+        <div className="navigate hideOnMobile">
 
             <NavLink to='/projects' className={({ isActive }) => {
               return isActive ? 'active' : '';
@@ -35,23 +40,41 @@ export default function navbar() {
           <span className="gg--dark-mode">
 
           </span>
+
           <button 
-            className='openNav' 
-            // onClick={} 
+            className='openNav hideOnBig' 
+            onClick={handleShowMenu} 
           >
             <span className="material-symbols-outlined nav-i">
               menu
             </span>
           </button>
         </div>
+        {showNav && 
         
-        <div className="navigation" id='side-menu'>
-          <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Blog</li>
-          </ul>
-        </div>
+          <div className="navigation b" id='side-menu'>
+            <button className="closeMenu" onClick={handleShowMenu}>
+              <span className="codicon--close"></span>
+            </button>
+            <ul className='nav-list'>
+              <li>
+                <NavLink to='/about' className={({ isActive }) => {
+                  return isActive ? 'active' : '';
+                }}>About</NavLink>
+              </li>
+              <li>
+                <NavLink to='/projects' className={({ isActive }) => {
+                  return isActive ? 'active' : '';
+                }}>Projects</NavLink>
+              </li>
+              <li>
+                <NavLink to='/blog' className={({ isActive }) => {
+                  return isActive ? 'active' : '';
+                }}>Blog</NavLink>
+              </li>
+            </ul>
+          </div>
+        }
     </div>
   )
 }

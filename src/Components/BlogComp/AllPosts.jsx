@@ -1,4 +1,3 @@
-import PostCategories from './PostCategories';
 import Posts from './Posts';
 import './Styles/AllPosts.css';
 
@@ -9,8 +8,7 @@ export default function AllPosts() {
     
 
   return (
-    <section className="blog-posts">
-      <PostCategories />
+    <section className="blog-posts flexDis">
       
       <div className="blog-head">
             <h2>Blog</h2>

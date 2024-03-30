@@ -4,7 +4,7 @@ import './Styles/AboutPage.css';
 export default function AboutPage() {
     
   return (
-    <div className='about-page'>
+    <div className='about-page flexDisplay'>
         <div className="personal-info">
           <div className="personal-intro">
             <h2 className='introduction'>I'm Arcides Ferrão, born and raised in Mozambique...</h2>
@@ -22,11 +22,11 @@ export default function AboutPage() {
             <img src="" alt="" />
           </div>
           <div className="personal-resume">
-            <button className="res-button">
+            <a className="res-button cont" href="https://arcidesferrao.github.io/resume/" target='_blank'>
               View Résumé
-            </button>
+            </a>
             <div className="download-res">
-              <button className='dowload btn'>
+              <button className='dowload btn cont'>
                 <span className="oui--download"></span>
               </button>
             </div>
@@ -62,6 +62,7 @@ export default function AboutPage() {
             <h3 className='pr-page-title'>Technologies</h3>
           </div>
         </div>
+
     </div>
   )
 }

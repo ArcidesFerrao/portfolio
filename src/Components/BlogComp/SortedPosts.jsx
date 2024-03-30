@@ -44,7 +44,7 @@ export default function SortedPosts() {
         <div className="posts">
             {allSorted && allSorted.map((post, index) => (
                 
-                <div className="post" key={index}>
+                <div className="post cont" key={index}>
 
                     <div className="post-img">
                         <img src={post.mainImage.asset.url} alt="" className='post-image'/>

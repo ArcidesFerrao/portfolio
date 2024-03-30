@@ -14,3 +14,11 @@
     grid-area: pg;
 }
 
+@media (max-width: 800px) {
+    .flexDisplay {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+      gap: 2rem;
+    }
+  }

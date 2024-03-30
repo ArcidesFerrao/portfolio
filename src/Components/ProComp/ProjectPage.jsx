@@ -40,7 +40,7 @@ export default function ProjectPage() {
     
 
   return (
-    <div className='page-container'>
+    <div className='page-container adjustSize'>
         <div className="head-project">
           <h2>{workedOn.title}</h2>
           <div className='url-container'>

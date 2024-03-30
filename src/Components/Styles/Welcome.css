@@ -22,3 +22,17 @@
     background-repeat: no-repeat;
     opacity: 70%;
 }
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+      display: none;
+    }
+    .smallPadding {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    .gridAuto {
+        display: flex;
+
+    }
+  }

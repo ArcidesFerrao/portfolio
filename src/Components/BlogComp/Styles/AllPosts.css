@@ -17,8 +17,14 @@
     grid-template-columns: 20% 35% 20% 25%;
     grid-auto-rows: max-content;
     grid-template-areas: 
-        'navi navi navi .'
         'hd hd . .'
         'ps ps ps .';
 }
 
+@media (max-width: 800px) {
+    .flexDis {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  }

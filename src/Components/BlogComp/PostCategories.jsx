@@ -8,25 +8,25 @@ export default function PostCategories() {
 
 
   return (
-    <div className="categories">
+    <div className="categories hideOnMobile">
             <ul className='list'>
-                <li>
+                <li className='cont'>
                   <NavLink to='/blog' >
                     All...
                   </NavLink>
                   
                 </li>
-                <li>
+                <li className='cont'>
                     <NavLink 
                         to={"/blog/recent"}  
                     >
                         Recent
                     </NavLink>
                 </li>
-                <li>Top 4</li>
-                <li>Front-End</li>
-                <li>Music</li>
-                <li>Art + Culture</li>
+                <li className='cont'>Top 4</li>
+                <li className='cont'>Front-End</li>
+                <li className='cont'>Music</li>
+                <li className='cont'>Art + Culture</li>
             </ul>
         </div>
   )

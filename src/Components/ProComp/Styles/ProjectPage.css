@@ -1,5 +1,4 @@
 
-
 .page-container {
     grid-area: pr;
     margin: 2rem 8rem;
@@ -29,14 +28,15 @@
 
 .image-project {
     grid-area: picPr;
-    width: 10rem;
     
-    display: flex;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .image-project img {
     border-radius: 0.4rem;
-    width: 50rem;
+    width: 100%;
+    
 }
 
 .sec {
@@ -100,3 +100,13 @@
 
 
 }
+
+@media (max-width: 1000px) {
+    
+    .adjustSize {
+        display: flex;
+        flex-direction: column;
+        
+        margin: 2rem 0;
+    }
+  }

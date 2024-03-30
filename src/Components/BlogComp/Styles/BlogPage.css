@@ -13,3 +13,8 @@ li {
     cursor: pointer;
 }
 
+@media (max-width: 800px) {
+    .adjustPadding {
+      padding: 6rem 3rem;
+    }
+  }

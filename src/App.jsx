@@ -10,13 +10,13 @@ function App() {
   return (
     <>
     
-      <nav className="bar" >
+      <nav className="bar " >
         <Navbar />
       </nav>
 
       <Outlet />
 
-      <section className='footer-container'>
+      <section className='footer-container smallPadding'>
         <Footer />
       </section>
     </>

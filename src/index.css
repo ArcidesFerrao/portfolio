@@ -4,7 +4,6 @@ body {
   min-height: 100vh;
 }
 
-
 :root {
   font-family: museomoderno;
   font-weight: 600;
@@ -33,9 +32,17 @@ button {
   border: none;
 }
 
-button:hover {
-}
-
 img {
   opacity: .7;
+}
+
+.cont {
+  border: solid 1px black;
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 600px) {
+  .hideOnMobile {
+    display: none;
+  }
 }

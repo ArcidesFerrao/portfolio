@@ -7,7 +7,7 @@ export default function BlogPage() {
   
 
   return (
-    <div className='blog-page'>
+    <div className='blog-page adjustPadding'>
       <PostCategories />
       
       <Outlet />

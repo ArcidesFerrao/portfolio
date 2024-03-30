@@ -29,3 +29,12 @@
     grid-auto-rows: auto;
     
 }
+
+@media (max-width: 800px) {
+    
+    .flexDisplay {
+        display: flex;
+        flex-direction: column;
+        padding: 6rem 3rem;
+    }
+  }

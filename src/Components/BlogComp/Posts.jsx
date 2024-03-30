@@ -47,7 +47,7 @@ export default function Posts() {
     <div className="posts">
             {allPostsData && allPostsData.map((post, index) => (
                 
-                <div className="post" key={index}>
+                <div className="post cont" key={index}>
 
                     <div className="post-img">
                         <img src={post.mainImage.asset.url} alt="" className='post-image'/>
